@@ -1,0 +1,792 @@
+2024-09-26 19:46:13,712 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9007
+ * Running on http://192.168.115.36:9007
+2024-09-26 19:46:13,712 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-26 19:46:13,712 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 19:46:14,162 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 19:46:14,166 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 19:47:38,675 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9007
+ * Running on http://192.168.115.36:9007
+2024-09-26 19:47:38,676 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-26 19:47:38,678 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 19:47:39,052 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 19:47:39,057 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 19:48:11,155 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 19:48:11] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-26 19:48:11,452 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 19:48:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-26 19:48:34,760 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 19:48:34] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-26 19:48:35,049 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 19:48:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-26 19:49:01,631 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 19:49:01] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-26 19:49:19,417 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app.py', reloading
+2024-09-26 19:49:19,473 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 19:49:19,861 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 19:49:19,867 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 19:49:25,384 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 19:49:25] "GET / HTTP/1.1" 200 -
+2024-09-26 19:51:40,574 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\src\\__init__.py', reloading
+2024-09-26 19:51:40,621 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 20:48:55,029 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9007
+ * Running on http://192.168.115.36:9007
+2024-09-26 20:48:55,029 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-26 20:48:55,032 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 20:48:56,047 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 20:48:56,047 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 20:51:07,687 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:51:07] "[33mPOST /upload-file/?file_path="A:/Projects/invarido/AI/reports/report.pdf" HTTP/1.1[0m" 404 -
+2024-09-26 20:51:34,433 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:51:34] "[33mPOST /upload-file/?file_path=A:/Projects/invarido/AI/reports/report.pdf' HTTP/1.1[0m" 404 -
+2024-09-26 20:52:15,284 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:52:15] "[33mPOST /upload-file/?file_path='A:/Projects/invarido/AI/reports/report.pdf' HTTP/1.1[0m" 404 -
+2024-09-26 20:52:44,904 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:52:44] "[33mPOST /upload-file/?file_path=A:/Projects/invarido/AI/reports/report.pdf HTTP/1.1[0m" 404 -
+2024-09-26 20:53:36,726 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app copy.py', reloading
+2024-09-26 20:53:36,886 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 20:53:38,286 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 20:53:38,290 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 20:55:16,248 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app.py', reloading
+2024-09-26 20:55:16,382 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 20:55:17,836 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 20:55:17,841 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 20:56:01,485 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:56:01] "[33mPOST /upload-file/ HTTP/1.1[0m" 404 -
+2024-09-26 20:56:20,958 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app.py', reloading
+2024-09-26 20:56:21,093 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 20:56:22,331 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 20:56:22,335 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 20:56:27,674 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:56:27] "[33mPOST /uploadFile/ HTTP/1.1[0m" 404 -
+2024-09-26 20:56:49,771 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app.py', reloading
+2024-09-26 20:56:49,932 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 20:56:51,430 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 20:56:51,434 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 20:57:25,653 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:57:25] "[33mPOST /uploadFile/ HTTP/1.1[0m" 404 -
+2024-09-26 20:58:09,179 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:58:09] "[33mPOST /uploadFile/ HTTP/1.1[0m" 404 -
+2024-09-26 20:58:14,913 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:58:14] "[31m[1mPOST /uploadFile HTTP/1.1[0m" 415 -
+2024-09-26 20:58:30,786 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:58:30] "POST /uploadFile HTTP/1.1" 200 -
+2024-09-26 20:59:53,808 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 20:59:53] "[35m[1mPOST /summarize-issues?prompt=what%20is%20in%20this%20pdf%20answer%20in%20one%20line HTTP/1.1[0m" 500 -
+2024-09-26 21:00:32,497 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app.py', reloading
+2024-09-26 21:00:32,648 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 21:00:33,815 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 21:00:33,819 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 21:00:58,171 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 21:00:58] "[35m[1mPOST /summarize-issues HTTP/1.1[0m" 500 -
+2024-09-26 21:03:57,782 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app.py', reloading
+2024-09-26 21:03:57,941 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 21:03:59,123 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 21:03:59,127 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 21:04:01,874 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 21:04:01] "[35m[1mPOST /summarize-issues HTTP/1.1[0m" 500 -
+2024-09-26 21:04:42,009 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 21:04:42] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-26 21:12:24,228 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9007
+ * Running on http://192.168.115.36:9007
+2024-09-26 21:12:24,228 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-26 21:12:24,230 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 21:12:25,456 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 21:12:25,456 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 21:13:17,999 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\AI\\app.py', reloading
+2024-09-26 21:13:18,151 - _APP_ - INFO -  * Restarting with stat
+2024-09-26 21:13:19,319 - _APP_ - WARNING -  * Debugger is active!
+2024-09-26 21:13:19,329 - _APP_ - INFO -  * Debugger PIN: 117-983-884
+2024-09-26 21:13:37,260 - _APP_ - INFO - 127.0.0.1 - - [26/Sep/2024 21:13:37] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 19:34:13,980 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9007
+ * Running on http://192.168.176.230:9007
+2024-09-28 19:34:13,980 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 19:34:14,162 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 19:34:19,682 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 19:34:19,687 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 19:34:29,925 - _APP_ - INFO -  * Detected change in 'D:\\SoftwareInstalled\\Lib\\datetime.py', reloading
+2024-09-28 19:34:29,934 - _APP_ - INFO -  * Detected change in 'D:\\SoftwareInstalled\\Lib\\_pydatetime.py', reloading
+2024-09-28 19:34:30,205 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2024-09-28 19:34:30,491 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 19:34:36,148 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 19:34:36,173 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 19:34:51,344 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 19:34:51] "[33mGET / HTTP/1.1[0m" 404 -
+2024-09-28 19:34:51,393 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 19:34:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-09-28 19:40:24,521 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 19:40:24] "[31m[1mGET /summarize-issues HTTP/1.1[0m" 405 -
+2024-09-28 19:41:13,766 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 19:41:13] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 19:42:39,068 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\core\\exceptions.py', reloading
+2024-09-28 19:42:39,074 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\modules\\__init__.py', reloading
+2024-09-28 19:42:39,090 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\modules\\mui.py', reloading
+2024-09-28 19:42:39,133 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\modules\\media.py', reloading
+2024-09-28 19:42:39,160 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\modules\\html.py', reloading
+2024-09-28 19:42:39,169 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\modules\\events.py', reloading
+2024-09-28 19:42:39,180 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\modules\\editors.py', reloading
+2024-09-28 19:42:39,189 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\modules\\dashboard.py', reloading
+2024-09-28 19:42:39,207 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\core\\frame.py', reloading
+2024-09-28 19:42:39,219 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit_elements\\core\\element.py', reloading
+2024-09-28 19:42:39,287 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit\\__init__.py', reloading
+2024-09-28 19:42:39,356 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\streamlit\\runtime\\state\\__init__.py', reloading
+2024-09-28 19:42:39,607 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 19:42:44,994 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 19:42:45,001 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 19:43:20,639 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\chainlit\\__init__.py', reloading
+2024-09-28 19:43:20,669 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\chainlit\\logger.py', reloading
+2024-09-28 19:43:20,952 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\proto\\enums.py', reloading
+2024-09-28 19:43:21,019 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\chainlit\\callbacks.py', reloading
+2024-09-28 19:43:21,051 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\chainlit\\telemetry.py', reloading
+2024-09-28 19:43:21,113 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\opentelemetry\\trace\\__init__.py', reloading
+2024-09-28 19:43:21,177 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\opentelemetry\\util\\_decorator.py', reloading
+2024-09-28 19:43:21,205 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\opentelemetry\\context\\context.py', reloading
+2024-09-28 19:43:21,217 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\opentelemetry\\util\\types.py', reloading
+2024-09-28 19:43:21,229 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\opentelemetry\\trace\\span.py', reloading
+2024-09-28 19:43:21,270 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\chainlit\\message.py', reloading
+2024-09-28 19:43:21,295 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\chainlit\\action.py', reloading
+2024-09-28 19:43:21,306 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\dataclasses_json\\__init__.py', reloading
+2024-09-28 19:43:21,319 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\dataclasses_json\\api.py', reloading
+2024-09-28 19:43:21,336 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\pydantic\\dataclasses.py', reloading
+2024-09-28 19:43:21,620 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 19:43:26,011 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 19:43:26,018 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 19:49:35,778 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 19:49:35,779 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 19:49:35,784 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 19:49:36,978 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 19:49:44,988 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 19:49:44,996 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:15:31,755 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9007
+ * Running on http://192.168.176.230:9007
+2024-09-28 22:15:31,755 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:15:31,790 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:15:35,395 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 22:15:35,405 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:15:38,725 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 22:15:38] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:16:08,996 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 22:16:08] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:18:10,394 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 22:18:10] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:18:47,834 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 22:18:47] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:19:33,564 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2024-09-28 22:19:33,630 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2024-09-28 22:19:33,633 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2024-09-28 22:19:33,692 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2024-09-28 22:19:33,704 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\src\\__init__.py', reloading
+2024-09-28 22:19:33,709 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\src\\ai_answer.py', reloading
+2024-09-28 22:19:33,715 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\flask\\app.py', reloading
+2024-09-28 22:19:33,755 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2024-09-28 22:19:33,764 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2024-09-28 22:19:33,804 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\src\\config.py', reloading
+2024-09-28 22:19:33,989 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:19:37,652 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 22:19:37,657 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:19:39,831 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:19:39,836 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:19:40,890 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:19:44,078 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 22:19:44,085 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:20:02,537 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 22:20:02] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:20:37,034 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 22:20:37] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:22:05,560 - _APP_ - INFO - 127.0.0.1 - - [28/Sep/2024 22:22:05] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 22:24:02,772 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2024-09-28 22:24:02,811 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\flask\\config.py', reloading
+2024-09-28 22:24:02,839 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2024-09-28 22:24:02,842 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2024-09-28 22:24:02,869 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\flask\\sansio\\blueprints.py', reloading
+2024-09-28 22:24:02,892 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2024-09-28 22:24:02,973 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\.env\\Lib\\site-packages\\werkzeug\\exceptions.py', reloading
+2024-09-28 22:24:03,307 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:24:07,246 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 22:24:07,252 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:24:32,785 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:24:32,785 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:24:32,788 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:24:32,913 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:24:36,844 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 22:24:36,851 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:25:06,549 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 22:25:06,549 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:25:11,286 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:9007
+ * Running on http://192.168.176.230:9007
+2024-09-28 22:25:11,286 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:25:11,316 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:25:14,451 - _APP_ - WARNING -  * Debugger is active!
+2024-09-28 22:25:14,459 - _APP_ - INFO -  * Debugger PIN: 629-844-483
+2024-09-28 22:25:17,856 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:25:17,859 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:25:17,859 - _APP_ - INFO -  * Detected change in 'D:\\Other\\Invarido\\AI\\AI\\app.py', reloading
+2024-09-28 22:25:18,708 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:25:26,483 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.176.230:8000
+2024-09-28 22:25:26,483 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:25:26,483 - _APP_ - INFO -  * Restarting with watchdog (windowsapi)
+2024-09-28 22:25:33,136 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.176.230:8000
+2024-09-28 22:25:33,136 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:26:00,176 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:26:00] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 22:26:50,668 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:26:50] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:27:40,304 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:27:40] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:28:23,945 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:28:23] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:28:50,097 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:28:50] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 415 -
+2024-09-28 22:28:56,431 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.176.230:8000
+2024-09-28 22:28:56,431 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:29:00,883 - _APP_ - ERROR - Exception on /summarize-issues [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 53, in summarize_issues
+    file_path = data.get('file_path')
+                ^^^^^^^^
+AttributeError: 'bytes' object has no attribute 'get'
+2024-09-28 22:29:00,898 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:29:00] "[35m[1mPOST /summarize-issues HTTP/1.1[0m" 500 -
+2024-09-28 22:29:17,943 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.176.230:8000
+2024-09-28 22:29:17,943 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:29:29,171 - _APP_ - ERROR - Exception on /summarize-issues [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 53, in summarize_issues
+    file_path = data.get('file_path')
+                ^^^^^^^^
+AttributeError: 'Request' object has no attribute 'get'
+2024-09-28 22:29:29,178 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:29:29] "[35m[1mPOST /summarize-issues HTTP/1.1[0m" 500 -
+2024-09-28 22:31:28,205 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.176.230:8000
+2024-09-28 22:31:28,205 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:31:37,878 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:31:37] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 400 -
+2024-09-28 22:33:03,626 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.176.230:8000
+2024-09-28 22:33:03,627 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:33:37,034 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:33:37] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 22:36:49,318 - _APP_ - ERROR - Exception on /summarize-issues [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 57, in summarize_issues
+    file = gemini_processor.upload_file(file_path, mime_type="application/pdf")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\src\ai_answer.py", line 50, in upload_file
+    uploaded_file = genai.upload_file(file_path, mime_type=mime_type)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\google\generativeai\files.py", line 71, in upload_file
+    response = client.create_file(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\google\generativeai\client.py", line 108, in create_file
+    media = googleapiclient.http.MediaFileUpload(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\googleapiclient\http.py", line 594, in __init__
+    self._fd = open(self._filename, "rb")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '.'
+2024-09-28 22:36:49,348 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:36:49] "[35m[1mPOST /summarize-issues HTTP/1.1[0m" 500 -
+2024-09-28 22:37:33,698 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.176.230:8000
+2024-09-28 22:37:33,698 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-28 22:37:44,811 - _APP_ - ERROR - Exception on /summarize-issues [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 57, in summarize_issues
+    file = gemini_processor.upload_file(file_path, mime_type="application/pdf")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\src\ai_answer.py", line 50, in upload_file
+    uploaded_file = genai.upload_file(file_path, mime_type=mime_type)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\google\generativeai\files.py", line 71, in upload_file
+    response = client.create_file(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\google\generativeai\client.py", line 108, in create_file
+    media = googleapiclient.http.MediaFileUpload(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\googleapiclient\http.py", line 594, in __init__
+    self._fd = open(self._filename, "rb")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'file not found'
+2024-09-28 22:37:44,839 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:37:44] "[35m[1mPOST /summarize-issues HTTP/1.1[0m" 500 -
+2024-09-28 22:41:18,890 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:41:18] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 22:44:14,201 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:44:14] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 22:45:33,460 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:45:33] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-28 22:53:59,385 - _APP_ - INFO - 192.168.176.230 - - [28/Sep/2024 22:53:59] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-29 11:27:32,407 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 11:27:32,407 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 11:30:58,389 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 11:30:58,389 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 11:31:19,582 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 11:31:19,582 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 11:33:52,445 - _APP_ - ERROR - Exception on /summarize-issues [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 57, in summarize_issues
+    file = gemini_processor.upload_file(file_path, mime_type="application/pdf")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\src\ai_answer.py", line 50, in upload_file
+    uploaded_file = genai.upload_file(file_path, mime_type=mime_type)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\google\generativeai\files.py", line 71, in upload_file
+    response = client.create_file(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\google\generativeai\client.py", line 108, in create_file
+    media = googleapiclient.http.MediaFileUpload(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\googleapiclient\_helpers.py", line 130, in positional_wrapper
+    return wrapped(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\googleapiclient\http.py", line 594, in __init__
+    self._fd = open(self._filename, "rb")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 22] Invalid argument: '"D:\\Other\\Invarido\\CyberInsight-AI\\16608938591651496248_4041_11.pdf"'
+2024-09-29 11:33:52,478 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 11:33:52] "[35m[1mPOST /summarize-issues HTTP/1.1[0m" 500 -
+2024-09-29 11:34:34,224 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 11:34:34] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-29 11:38:32,902 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 11:38:32] "[31m[1mPOST /uploadFile HTTP/1.1[0m" 415 -
+2024-09-29 11:39:22,804 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 11:39:22,804 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 11:39:47,534 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 11:39:47] "[31m[1mPOST /uploadFile HTTP/1.1[0m" 415 -
+2024-09-29 11:56:59,955 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 11:56:59,955 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 11:57:05,853 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 70, in upload_pdf
+    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'UPLOAD_FOLDER'
+2024-09-29 11:57:05,868 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 11:57:05] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-29 11:58:32,534 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 11:58:32,534 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 11:58:41,361 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 71, in upload_pdf
+    return redirect(url_for('download_file', name=filename))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 220, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'download_file' with values ['name']. Did you mean 'upload_file' instead?
+2024-09-29 11:58:41,374 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 11:58:41] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-29 11:58:45,619 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 71, in upload_pdf
+    return redirect(url_for('download_file', name=filename))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 220, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'download_file' with values ['name']. Did you mean 'upload_file' instead?
+2024-09-29 11:58:45,627 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 11:58:45] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-29 12:00:05,431 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 12:00:05,431 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 12:00:37,633 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 12:00:37,633 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 12:00:43,229 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 71, in upload_pdf
+    return redirect(url_for('download_file', name=filename))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 220, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1084, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1073, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'download_file' with values ['name']. Did you mean 'upload_file' instead?
+2024-09-29 12:00:43,243 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 12:00:43] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-29 12:04:36,017 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.32.230:8000
+2024-09-29 12:04:36,017 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-29 12:04:40,003 - _APP_ - INFO - 192.168.32.230 - - [29/Sep/2024 12:04:40] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 10:08:52,413 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 10:08:52,413 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 10:11:09,322 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 10:11:09] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 10:44:11,803 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 10:44:11] "POST /summarize-issues HTTP/1.1" 200 -
+2024-09-30 12:06:32,878 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 12:06:32,878 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 12:06:45,877 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 61, in upload_pdf
+    flash('No file part')
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 323, in flash
+    session["_flashes"] = flashes
+    ~~~~~~~^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-09-30 12:06:45,895 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:06:45] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-30 12:16:41,808 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 61, in upload_pdf
+    flash('No file part')
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 323, in flash
+    session["_flashes"] = flashes
+    ~~~~~~~^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-09-30 12:16:41,810 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:16:41] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-30 12:18:18,187 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 61, in upload_pdf
+    flash('No file part')
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 323, in flash
+    session["_flashes"] = flashes
+    ~~~~~~~^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-09-30 12:18:18,188 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:18:18] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-30 12:18:56,906 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 61, in upload_pdf
+    flash('No file part')
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 323, in flash
+    session["_flashes"] = flashes
+    ~~~~~~~^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-09-30 12:18:56,906 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:18:56] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-30 12:19:23,406 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 61, in upload_pdf
+    flash('No file part')
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 323, in flash
+    session["_flashes"] = flashes
+    ~~~~~~~^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-09-30 12:19:23,406 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:19:23] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-30 12:21:46,047 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 12:21:46,047 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 12:21:51,365 - _APP_ - ERROR - Exception on /uploadPDF [POST]
+Traceback (most recent call last):
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Other\Invarido\AI\AI\app.py", line 61, in upload_pdf
+    flash('No file part')
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\helpers.py", line 323, in flash
+    session["_flashes"] = flashes
+    ~~~~~~~^^^^^^^^^^^^
+  File "D:\Other\Invarido\.env\Lib\site-packages\flask\sessions.py", line 102, in _fail
+    raise RuntimeError(
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2024-09-30 12:21:51,373 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:21:51] "[35m[1mPOST /uploadPDF HTTP/1.1[0m" 500 -
+2024-09-30 12:23:04,240 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:23:04] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:23:38,852 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:23:38] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:23:46,674 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:23:46] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:24:13,594 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:24:13] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:24:57,121 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:24:57] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:25:06,524 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 12:25:06,524 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 12:25:09,479 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:25:09] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:25:17,126 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:25:17] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:29:42,699 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 12:29:42,699 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 12:30:20,331 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:30:20] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:31:08,770 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:31:08] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:32:21,435 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:32:21] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:32:30,427 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:32:30] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:33:21,624 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:33:21] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:34:20,108 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 12:34:20,108 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 12:35:02,170 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:35:02] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 12:35:44,018 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 12:35:44] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:19:45,763 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 13:19:45,763 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 13:23:21,853 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:23:21] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:25:56,962 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 13:25:56,962 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 13:28:48,474 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:28:48] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:31:29,005 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 13:31:29,006 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 13:32:00,900 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:32:00] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:32:47,297 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:32:47] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:36:14,734 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:36:14] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:36:40,020 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:36:40] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:42:56,437 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:42:56] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:43:01,682 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:43:01] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:43:58,962 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:43:58] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:44:10,010 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 13:44:10,010 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 13:44:19,529 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:44:19] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:45:13,515 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:45:13] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:46:22,716 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:46:22] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:47:35,429 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:47:35] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:49:21,610 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:49:21] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:49:50,437 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:49:50] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:50:37,898 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:50:37] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:51:47,917 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:51:47] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:53:22,670 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:53:22] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:54:47,724 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:54:47] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:56:19,305 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:56:19] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:57:47,516 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:57:47] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 13:59:45,351 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 13:59:45] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:02:20,117 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:02:20] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:03:33,066 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:03:33] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:05:06,704 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 14:05:06,704 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 14:05:19,562 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:05:19] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:05:53,081 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:05:53] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:07:23,044 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:07:23] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:07:58,868 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:07:58] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:09:00,254 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:09:00] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:09:56,362 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:09:56] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:10:13,874 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:10:13] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:10:39,319 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:10:39] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:11:56,214 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:11:56] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:13:46,930 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:13:46] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:14:26,457 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:14:26] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:25:37,733 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:25:37] "POST /uploadPDF HTTP/1.1" 200 -
+2024-09-30 14:34:10,982 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.128:8000
+2024-09-30 14:34:10,982 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-09-30 14:34:49,241 - _APP_ - INFO - 192.168.8.128 - - [30/Sep/2024 14:34:49] "POST /uploadPDF HTTP/1.1" 200 -
