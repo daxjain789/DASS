@@ -6,7 +6,7 @@ import google.generativeai as genai
 # Load environment variables from .env file
 load_dotenv()
 
-class GeminiFileProcessor:
+class GeminiDashboardProcessor:
     """
     A class to handle file uploads and interaction with the Gemini API.
     """
@@ -27,9 +27,19 @@ class GeminiFileProcessor:
             "top_p": 0.95,
             "top_k": 64,
             "max_output_tokens": 100000,
-            "response_mime_type": "text/plain",
+            "response_mime_type": "application/json",
+            # "response_mime_type": "text/plain",
         }
 
+        dashboard_config = {
+            "temperature": 0.1,
+            "top_p": 0.95,
+            "top_k": 64,
+            "max_output_tokens": 100000,
+            # "response_mime_type": "application/json",
+            "response_mime_type": "text/plain",
+        }
+        
         system_instruction = (
             "You’re a highly skilled cybersecurity analyst with a deep understanding of unstructured data analysis and natural language processing. "
             "Your expertise lies in synthesizing complex cybersecurity audit reports into actionable insights. Your goal is to interpret the reports "
@@ -41,6 +51,14 @@ class GeminiFileProcessor:
             generation_config=generation_config,
             system_instruction=system_instruction,
             tools='code_execution'
+        )
+
+        
+        self.generation_model = genai.GenerativeModel(
+            model_name="gemini-1.5-pro-exp-0827",
+            generation_config=dashboard_config,
+            system_instruction=system_instruction,
+            # tools='code_execution'
         )
 
     def upload_file(self, file_path: str, mime_type: str = None):
@@ -79,6 +97,11 @@ class GeminiFileProcessor:
         if not self.files:
             raise Exception("No files uploaded. Upload a file first.")
 
+        if prompt == "local":
+            print("local")
+            chat_session = self.model.start_chat()
+            return chat_session
+
         chat_session = self.model.start_chat(
             history=[
                 {
@@ -96,17 +119,26 @@ class GeminiFileProcessor:
 
         return chat_session
 
-    def send_message(self, chat_session, message: str):
-        """
-        Sends a message to the active chat session and returns the response.
-        """
-        response = chat_session.send_message(message)
-        return response.text
+    # def send_message(self,file ,chat_session, message: str):
+    #     """
+    #     Sends a message to the active chat session and returns the response.
+    #     """
+    #     response = chat_session.send_message([file,message])
+    #     return response.text
 
+    def send_message(self,file ,chat_session, message: str):
+    # def dashboard_generation(self,file ,chat_session, message: str):
+        response = self.generation_model.generate_content([file,message])
+        # response = chat_session.send_message([file,message])
+        try:
+            return eval(response.text[7:-3])
+        except:
+            return response.text
+        
 
 if __name__ == "__main__":
     # Instantiate the processor class and configure the model
-    gemini_processor = GeminiFileProcessor()
+    gemini_processor = GeminiDashboardProcessor()
 
     # Upload the file (update the path to your local file)
     file_path = "A:/Projects/invarido/AI/reports/report.pdf"
