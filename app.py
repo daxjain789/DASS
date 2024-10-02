@@ -51,12 +51,12 @@ def dashboardView():
 def analysis():
     return render_template('analyse.html')
 
-def genimiGenerator(file_path,prompt):
-    file = gemini_processor.upload_file(file_path, mime_type="application/pdf")
-    gemini_processor.wait_for_files_to_be_ready()
-    chat_session = gemini_processor.start_chat_session(prompt)
-    response = gemini_processor.send_message(file,chat_session, prompt)
-    return response
+# def genimiGenerator(file_path,prompt):
+#     file = gemini_processor.upload_file(file_path, mime_type="application/pdf")
+#     gemini_processor.wait_for_files_to_be_ready()
+#     chat_session = gemini_processor.start_chat_session(prompt)
+#     response = gemini_processor.send_message(file,chat_session, prompt)
+#     return response
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -193,13 +193,16 @@ def summarizeIssues():
 def summarize_issues():
     file_path = request.form.get("file")
     prompt = request.form.get("prompt")
+    history = request.form.get("history")
 
     print("*"*30)
-    print("path:",file_path,"prompt",prompt)
+    print("path:",file_path,"prompt",prompt,"\n\nhistory:",history)
     file = gemini_processor_.upload_file(file_path, mime_type="application/pdf")
     gemini_processor_.wait_for_files_to_be_ready()
-    chat_session = gemini_processor_.start_chat_session("local")
-    return Response(gemini_processor_.send_message(file, chat_session, prompt), mimetype="text/event-stream")
+    chat_session = gemini_processor_.start_chat_session(history)
+    # chat_session = gemini_processor_.start_chat_session("local")
+    return Response(gemini_processor_.send_message(chat_session, prompt), mimetype="text/event-stream")
+    # return Response(gemini_processor_.send_message(file, chat_session, prompt), mimetype="text/event-stream")
 
 @app.route('/reportAnalysis',methods=['POST'])
 def reportAnalysis():

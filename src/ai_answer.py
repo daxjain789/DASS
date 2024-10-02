@@ -70,7 +70,7 @@ class GeminiFileProcessor:
 
         print("files are ready.")
 
-    def start_chat_session(self, prompt: str):
+    def start_chat_session(self, prompt: str, chat_history = []):
         """
         Starts a chat session with the uploaded files and given prompt.
         """
@@ -85,21 +85,19 @@ class GeminiFileProcessor:
             chat_session = self.model.start_chat()
             return chat_session
 
-        chat_session = self.model.start_chat(
-            history=[
+        file_hist = [
                 {
                     "role": "user",
                     "parts": [self.files[0], prompt]
                 },
                 {
                     "role": "model",
-                    "parts": [
-                        "Analyzing and generating a summary from the uploaded file..."
-                    ]
+                    "parts": ["Analyzing and generating a summary from the uploaded file..."]
                 },
             ]
-        )
+        history = file_hist + chat_history
 
+        chat_session = self.model.start_chat(history=history)
         return chat_session
 
     def send_message(self,file ,chat_session, message: str):
