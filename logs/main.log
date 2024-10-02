@@ -1791,3 +1791,55 @@ AssertionError: applications must write bytes
 2024-10-02 12:35:18,210 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:35:18] "GET /static/js/dashboard.js HTTP/1.1" 200 -
 2024-10-02 12:35:18,299 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:35:18] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
 2024-10-02 12:35:18,352 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:35:18] "[35m[1mPOST /dashboardData HTTP/1.1[0m" 500 -
+2024-10-02 12:54:52,682 - _APP_ - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.115.36:8000
+2024-10-02 12:54:52,682 - _APP_ - INFO - [33mPress CTRL+C to quit[0m
+2024-10-02 12:54:52,690 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 12:54:53,964 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 12:54:53,970 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 12:55:27,377 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:55:27] "[31m[1mPOST /summarize-issues HTTP/1.1[0m" 405 -
+2024-10-02 12:56:57,326 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:56:57] "GET /dashboard HTTP/1.1" 200 -
+2024-10-02 12:57:50,833 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:57:50] "GET /dashboard HTTP/1.1" 200 -
+2024-10-02 12:57:51,034 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:57:51] "GET /static/css/dashboard.css HTTP/1.1" 200 -
+2024-10-02 12:57:51,039 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:57:51] "GET /static/img/logo.png HTTP/1.1" 200 -
+2024-10-02 12:57:51,686 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:57:51] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+2024-10-02 12:57:52,637 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:57:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-02 12:57:55,777 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 12:57:55] "[35m[1mPOST /dashboardData HTTP/1.1[0m" 500 -
+2024-10-02 13:12:25,248 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:12:25] "[31m[1mPOST /dashboard HTTP/1.1[0m" 405 -
+2024-10-02 13:13:12,380 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:13:12] "[35m[1mPOST /dashboardData HTTP/1.1[0m" 500 -
+2024-10-02 13:15:15,793 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:15:15] "[35m[1mPOST /dashboardData HTTP/1.1[0m" 500 -
+2024-10-02 13:16:08,886 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:16:08] "[35m[1mPOST /dashboardData HTTP/1.1[0m" 500 -
+2024-10-02 13:17:43,543 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\DASS\\app.py', reloading
+2024-10-02 13:17:43,691 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 13:17:44,873 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 13:17:44,877 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 13:18:28,111 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:18:28] "POST /dashboardData HTTP/1.1" 200 -
+2024-10-02 13:21:59,268 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\DASS\\app.py', reloading
+2024-10-02 13:21:59,464 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 13:22:00,751 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 13:22:00,756 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 13:22:30,553 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:22:30] "POST /dashboardData HTTP/1.1" 200 -
+2024-10-02 13:23:37,953 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\DASS\\app.py', reloading
+2024-10-02 13:23:38,204 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 13:23:39,268 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 13:23:39,272 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 13:47:36,229 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\DASS\\app.py', reloading
+2024-10-02 13:47:36,385 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 13:47:37,498 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 13:47:37,505 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 13:48:13,428 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\DASS\\src\\ai_dashboard.py', reloading
+2024-10-02 13:48:13,582 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 13:48:14,873 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 13:48:14,880 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 13:49:47,565 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\DASS\\app.py', reloading
+2024-10-02 13:49:47,856 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 13:49:49,737 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 13:49:49,746 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 13:51:52,134 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:51:52] "POST /reportAnalysis HTTP/1.1" 200 -
+2024-10-02 13:54:56,034 - _APP_ - INFO -  * Detected change in 'A:\\Projects\\invarido\\DASS\\app.py', reloading
+2024-10-02 13:54:56,173 - _APP_ - INFO -  * Restarting with stat
+2024-10-02 13:54:57,648 - _APP_ - WARNING -  * Debugger is active!
+2024-10-02 13:54:57,655 - _APP_ - INFO -  * Debugger PIN: 558-134-367
+2024-10-02 13:55:35,075 - _APP_ - INFO - 127.0.0.1 - - [02/Oct/2024 13:55:35] "POST /reportAnalysis HTTP/1.1" 200 -

@@ -89,20 +89,22 @@ def dashboard():
     prompt = request.form.get('prompt')
     print("dashboard inn")
     
+    # file_path = r"A:\Projects\invarido\DASS\reports\report.pdf"
     prompt123="""
         provide following details in json formate from pdf
 
-        1. total incedents: output will be numbers of total incendents show in report
-        2. security monitoring tools: find them and give actionable insigts if required
-        3. recommendation categorys: understand the recommendations from audit and assign from below options to each recommendation 
+        1. total incedents: output will be numbers of total security incendents show in report
+        2. Active Threats: How many active threats are currently being monitored
+        3. Systems Monitored: What is the total number of systems being monitored for security threats
+        4. recommendation categorys: understand the recommendations from audit and assign from below options to each recommendation 
             i. Non-Technical (NT)
             ii. Technical (T)
             iii. Physical (P)
-            iv. GDPR-related
+            iv. GDPR-related (G)
             provide total number for each category
 
         example output:
-        {"incidents":10,"security_monitoring":{"existing_tools":"","recommended":""},"recommendation_category":{"T":2,"NT":4,"P":3,"G":0}}
+        {"incidents":10,"activeThreats":3,"monitired":6,"recommendation_category":{"T":2,"NT":4,"P":3,"G":0}}
 
         instruction:
         1. output should be strictly in json formet only as per example
@@ -169,10 +171,10 @@ def dashboard():
     print("File:",file)
     gemini_processor.wait_for_files_to_be_ready()
     chat_session = gemini_processor.start_chat_session("local")
-    response123 = gemini_processor.send_message(file, chat_session, prompt123)
-    response_area = gemini_processor.send_message(file, chat_session, prompt_recommendations_area)
-    response_security = gemini_processor.send_message(file, chat_session, prompt_security)
-    # response_insight = gemini_processor.send_message(file, chat_session, prompt_insight)
+    response123 = gemini_processor.send_message(file, prompt123)
+    response_area = gemini_processor.send_message(file, prompt_recommendations_area)
+    response_security = gemini_processor.send_message(file, prompt_security)
+    # response_insight = gemini_processor.send_message(file, prompt_insight)
 
     # return jsonify({"response_security": response_security})
     return jsonify({"summary123": response123,"response_area":response_area,"response_security": response_security})
@@ -204,8 +206,14 @@ def reportAnalysis():
     print("function is called")
     path = request.form.get("path")
     prompt = "Analyse given report and provide the solution of this report"
+    prompt = "Please thoroughly analyze the provided PDF of the cybersecurity audit report, focusing on identified vulnerabilities, security gaps, compliance issues, and risk areas. Summarize the key findings and assess the severity of the risks highlighted in the report. Based on your analysis, propose specific solutions or recommendations to mitigate these risks, enhance security measures, and ensure compliance with relevant cybersecurity standards and best practices."
 
-    response = genimiGenerator(path,prompt)
+    file = gemini_processor.upload_file(path, mime_type="application/pdf")
+    print("File:",file)
+    gemini_processor.wait_for_files_to_be_ready()
+    response = gemini_processor.send_message(file, prompt)
+
+    # response = genimiGenerator(path,prompt)
     print(response)
     return jsonify({"data": response})
 

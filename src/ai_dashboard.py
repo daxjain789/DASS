@@ -126,14 +126,17 @@ class GeminiDashboardProcessor:
     #     response = chat_session.send_message([file,message])
     #     return response.text
 
-    def send_message(self,file ,chat_session, message: str):
+    def send_message(self,file , message: str):
     # def dashboard_generation(self,file ,chat_session, message: str):
         response = self.generation_model.generate_content([file,message])
         # response = chat_session.send_message([file,message])
         try:
             return eval(response.text[7:-3])
         except:
-            return response.text
+            try:
+                return eval(response[(response.text.find("{")):-(response.text[::-1].find("}"))])
+            except:
+                return response.text
         
 
 if __name__ == "__main__":
