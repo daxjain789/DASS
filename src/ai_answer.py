@@ -102,12 +102,14 @@ class GeminiFileProcessor:
         chat_session = self.model.start_chat(history=history)
         return chat_session
 
-    def send_message(self,file ,chat_session, message: str):
+    # def send_message(self,file ,chat_session, message: str):
+    def send_message(self, chat_session, message: str):
         """
         Sends a message to the active chat session and returns the response.
         """
 
-        answer = chat_session.send_message([file,message], stream=True)
+        answer = chat_session.send_message([message], stream=True)
+        # answer = chat_session.send_message([file,message], stream=True)
         # print("\n\n\nAnswer:",answer)
         for chunk in answer:
             # response += chunk

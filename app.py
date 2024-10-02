@@ -12,6 +12,7 @@ from werkzeug.utils import secure_filename
 # load_dotenv()
 
 UPLOAD_FOLDER = "D:/Other/Invarido/GITHUB/DASS/uploadFile"
+UPLOAD_FOLDER = "A:/Projects/invarido/DASS/uploadFile"
 ALLOWED_EXTENSIONS = {'txt', 'pdf'}
 
 CONF = Config()
@@ -202,7 +203,7 @@ def summarize_issues():
     gemini_processor_.wait_for_files_to_be_ready()
     chat_session = gemini_processor_.start_chat_session(history)
     # chat_session = gemini_processor_.start_chat_session("local")
-    return Response(gemini_processor_.send_message(chat_session, prompt,), mimetype="text/event-stream")
+    return Response(gemini_processor_.send_message(chat_session, prompt), mimetype="text/event-stream")
     # return Response(gemini_processor_.send_message(file, chat_session, prompt), mimetype="text/event-stream")
 
 @app.route('/reportAnalysis',methods=['POST'])
