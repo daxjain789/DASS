@@ -42,14 +42,5 @@ export API_KEY=your_api_key_here
 
 python app.py
 
-## Contributors
-
-
-- [Dax Jain](https://github.com/daxjain789)
-- [Aliraza Panjwani](https://github.com/aliraza-panjwani)
-- [Sushil SUthar](https://github.com/Sushilkumar-suthar)
-- [Shreya Tiwari](https://github.com/Shreya61)
-
-
 ## Demo video link
 [![Watch the video]((https://github.com/daxjain789/DASS/blob/dev/DASS%20Make%20it%20secure.mp4))]
