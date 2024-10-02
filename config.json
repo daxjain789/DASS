@@ -1,0 +1,14 @@
+[
+    {
+        "app":
+        {
+            "log_path":"logs/",
+            "log_clear_after_days":7,
+            "port": 9007, 
+            "host": "0.0.0.0", 
+            "threaded": "True",
+            "debug":"True"
+        }
+    }
+
+]

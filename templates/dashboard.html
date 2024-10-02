@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-2 d-none d-md-block sidebar">
+                <div class="position-sticky">
+                    <h3 class="px-3 mb-4" style="width:100%;display:flex;justify-content: center;">
+                        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="AI Avatar" style="height:100px;width:auto;">
+                    </h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">
+                                <i class="bi bi-chat"></i> Chatbot
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/dashboard">
+                                <i class="bi bi-shield-check"></i> Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/analysis">
+                                <i class="bi bi-graph-up"></i> Analytics
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main class="col-md-10 ms-sm-auto px-md-4 main-content">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Cybersecurity Dashboard</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button class="btn btn-outline-secondary" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Metrics -->
+                <div class="row row-cols-1 row-cols-md-4 g-4 mb-4 d-flex justify-content-around">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Incidents</h5>
+                                <p class="big-number" id='totalIncident'></p>
+                                <!-- <p class="change">+15% from last month</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Systems Monitored</h5>
+                                <p class="big-number" id='systemMonitored'></p>
+                                <!-- <p class="change">+3% from last month</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts -->
+                <div class="row mb-4">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Security Incidents Over Time</h5>
+                                <canvas id="incidentsChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Threat Distribution</h5>
+                                <canvas id="threatDistributionChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Security Alerts -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recent Security Alerts</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Latest security alerts detected in your systems</h6>
+                        <table class="table alert-table">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                    <th>Severity</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class='addAlerts'>
+                                <!-- <tr>
+                                    <td>Malware Detected</td>
+                                    <td>Trojan found on workstation WS-001</td>
+                                    <td class="severity-critical">Critical</td>
+                                    <td>5 minutes ago</td>
+                                    <td class="status-in-progress">In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Unauthorized Access Attempt</td>
+                                    <td>Multiple failed login attempts from IP 192.168.1.105</td>
+                                    <td class="severity-high">High</td>
+                                    <td>10 minutes ago</td>
+                                    <td class="status-resolved">Resolved</td>
+                                </tr>
+                                <tr>
+                                    <td>Firewall Rule Violation</td>
+                                    <td>Outbound connection attempt to blocked IP 203.0.113.0</td>
+                                    <td class="severity-medium">Medium</td>
+                                    <td>15 minutes ago</td>
+                                    <td class="status-investigating">Investigating</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Attack Origin Map and Top Vulnerable Assets -->
+                <!-- <div class="row mb-4">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Attack Origin Map</h5>
+                                <div class="text-center">
+                                    <i class="bi bi-globe" style="font-size: 100px; color: #6c757d;"></i>
+                                    <p>World map visualization goes here</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Top Vulnerable Assets</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Asset</th>
+                                            <th>Vulnerabilities</th>
+                                            <th>Risk Score</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Web Server 1</td>
+                                            <td>15</td>
+                                            <td class="severity-high">High</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Database Server</td>
+                                            <td>8</td>
+                                            <td class="severity-medium">Medium</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </main>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qanoun</title>
+    <style>
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+        #responseBox {
+            width: 100%;
+            height: 400px; /* Increased height */
+            border: 1px solid #000;
+            overflow-y: scroll;
+            white-space: pre-wrap; /* Ensures that newlines are preserved */
+        }
+        #inputBox {
+            margin-bottom: 20px;
+        }
+        .inputField {
+            display: block;
+            margin-bottom: 10px;
+        }
+        #userInput {
+            width: 100%; /* Make the user input box expand horizontally */
+            padding: 5px; /* Add some padding for better readability */
+        }
+    </style>
+</head>
+<body>
+    <h1>Ai Search</h1>
+    <div id="inputBox">
+        <label class="inputField">
+            User Input:
+            <input type="text" id="userInput" onkeypress="clickPress(event)">
+        </label>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    
+        <label class="inputField">
+            User Country:
+            <input type="text" id="userCountry" value="kuwait">
+        </label>
+                </td>
+                <td>
+        <label class="inputField">
+            Subscription Type:
+            <!-- <input type="text" id="subscriptionType" value="lawyer"> -->
+            <select id="subscriptionType">
+                <option value="student">Student</option>
+                <option value="lawyer">Lawyer</option>
+                <option value="general">General</option>
+            </select>
+        </label>
+    </td>
+    <td hidden>
+        <!-- Rounded switch -->
+         
+        Internet Use:
+        <label class="switch">
+            <input type="checkbox" id="internet" checked>
+            <span class="slider round"></span>
+        </label>
+
+<!-- 
+        <label class="inputField">
+            Past Response:
+            <textarea id="pastResponse" rows="3" cols="30"></textarea>
+        </label> -->
+    </td>
+    <td>
+        <button onclick="sendPostRequest()">Send</button>
+        
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="responseBox"></div>
+
+    <script>
+        function clickPress(event) {
+            if (event.keyCode == 13) {
+                sendPostRequest()
+            }
+        }
+
+        let conversationHistory = [];
+
+        async function sendPostRequest() {
+            // const responseBox = document.getElementById('responseBox');
+            // const userInput = document.getElementById('userInput').value;
+            // const userCountry = document.getElementById('userCountry').value;
+            // const subscriptionType = document.getElementById('subscriptionType').value;
+            // const internet = document.getElementById('internet').checked;
+            // // const pastResponse = document.getElementById('pastResponse').value;
+            // responseBox.innerHTML = ''; // Clear previous response
+            // document.getElementById('userInput').value = ""; // Clear input
+
+            const current_url = window.location.href;
+            const new_url = current_url;
+            console.log(new_url)
+            try {
+                const response = await fetch(new_url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'text/event-stream'
+                    },
+                    body: JSON.stringify({
+                        // user_input: userInput,
+                        // user_country: userCountry,
+                        // // past_response: pastResponse,
+                        // internet: internet,
+                        // subscription_type: subscriptionType,
+                        // conversation_history: conversationHistory
+                        // conversation_history: conversationHistory.slice(-6)
+                    })
+                });
+
+                if (!response.body) {
+                    responseBox.innerHTML = 'No response body.';
+                    return;
+                }
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                console.log('Stream start');
+                function readStream() {
+                    reader.read().then(({ done, value }) => {
+                        if (done) {
+                            console.log('Stream complete');
+                            // conversationHistory.push({ role: 'user', content: userInput });
+                            // conversationHistory.push({ role: 'agent', content: responseBox.innerHTML });
+                            conversationHistory.push({ 'question': userInput, 'answer': responseBox.innerHTML });
+                            console.log(JSON.stringify(conversationHistory));
+                            // pastResponse.innerHTML = conversationHistory;
+                            return;
+                        }
+                        let stream_return = decoder.decode(value, { stream: true });
+                        console.log("encoded recived: " + value);
+                        console.log('Streaming: '+ stream_return);
+                        responseBox.innerHTML += stream_return;
+                        responseBox.scrollTop = responseBox.scrollHeight; // Auto-scroll to bottom
+                        readStream();
+                    });
+                }
+
+                readStream();
+            } catch (error) {
+                responseBox.innerHTML = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
