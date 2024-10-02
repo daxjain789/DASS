@@ -1,14 +1,18 @@
 import logging
 import datetime
-from flask import Flask, render_template, Response, request,stream_with_context,jsonify
+from flask import Flask, render_template, Response, request,stream_with_context,jsonify,flash
 import json
 from flask_cors import CORS
 # from src import  AiSearch,Config,LawDrafting
 # from src import  AiSearch,Config,LawDrafting
 from src import  Config, GeminiFileProcessor,GeminiDashboardProcessor
 import os
+from werkzeug.utils import secure_filename
 # from dotenv import load_dotenv
 # load_dotenv()
+
+UPLOAD_FOLDER = "D:/Other/Invarido/GITHUB/DASS/uploadFile"
+ALLOWED_EXTENSIONS = {'txt', 'pdf'}
 
 CONF = Config()
 trash_day = CONF.PRODUCTION_APP_LOG_CLEAR
@@ -35,22 +39,54 @@ CORS(app)
 gemini_processor_ = GeminiFileProcessor()
 gemini_processor = GeminiDashboardProcessor()
 
-@app.route('/uploadFile', methods=['POST'])
-def upload_file():
-    print("INN")
-    data = request.json
-    file_path = data.get('file_path')
-    # file_path = request.form.get('file_path')
-    file = gemini_processor_.upload_file(file_path, mime_type="application/pdf")
-    return jsonify({"status": "File uploaded", "uri": file.uri})
+@app.route("/",methods=['GET'])
+def index():
+    return render_template('index.html')
 
+@app.route("/dashboard",methods=['GET'])
+def dashboardView():
+    return render_template('dashboard.html')
 
-@app.route('/dashboard', methods=['POST'])
+@app.route("/analysis",methods=['GET'])
+def analysis():
+    return render_template('analyse.html')
+
+def genimiGenerator(file_path,prompt):
+    file = gemini_processor.upload_file(file_path, mime_type="application/pdf")
+    gemini_processor.wait_for_files_to_be_ready()
+    chat_session = gemini_processor.start_chat_session(prompt)
+    response = gemini_processor.send_message(file,chat_session, prompt)
+    return response
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@app.route('/uploadPDF', methods=['POST'])
+def upload_pdf():
+    print("upload Method called")
+    if request.method == 'POST':
+        prompt = request.form.get("prompt")
+        print("prompt:",prompt,request.files)
+        if 'file' not in request.files:
+            flash('No file part')
+            return jsonify({"url":request.url})
+        file = request.files['file']
+        if file.filename == '':
+            flash('No selected file')
+            return jsonify({"url":request.url})
+        if file and allowed_file(file.filename):
+            print("file founded")
+            filename = secure_filename(".".join(file.filename.split(".")[:-1])+"-Uploaded."+file.filename.split(".")[-1])
+            file.save(os.path.join(UPLOAD_FOLDER, filename))
+            path = os.path.join(UPLOAD_FOLDER, filename)
+            return jsonify({"path": path})
+
+@app.route('/dashboardData', methods=['POST'])
 def dashboard():
-
-    data = request.json
-    file_path = data.get('file_path')
-    prompt = data.get('prompt')
+    # data = request.json
+    file_path = request.form.get('file_path')
+    prompt = request.form.get('prompt')
     print("dashboard inn")
     
     prompt123="""
@@ -73,54 +109,54 @@ def dashboard():
         2. no additional explanation is required
         """
     prompt_recommendations_area = """
-Extract the following fields from the PDF document and return them in JSON format:
+        Extract the following fields from the PDF document and return them in JSON format:
 
-{
-  "Governance": "<Number of Recommendations>",
-  "Asset Recommendations": "<Number of Recommendations>",
-  "Risk Management Recommendations": "<Number of Recommendations>",
-  "Training and Awareness Recommendations": "<Number of Recommendations>",
-  "Policies and Procedure Recommendations": "<Number of Recommendations>",
-  "Physical Security Recommendations": "<Number of Recommendations>",
-  "Incident Response Management Recommendations": "<Number of Recommendations>",
-  "Business Continuity Management Recommendations": "<Number of Recommendations>",
-  "Third Party Recommendations": "<Number of Recommendations>",
-  "Legal, Regulatory and Contractual Recommendations": "<Number of Recommendations>",
-  "Secure Configuration": "<Number of Recommendations>",
-  "Network Security": "<Number of Recommendations>",
-  "Anti-Malware": "<Number of Recommendations>",
-  "User Access and User Privileges": "<Number of Recommendations>",
-  "Mobile Devices, Mobile Working and Removable Media": "<Number of Recommendations>",
-  "Data Storage": "<Number of Recommendations>",
-  "Development": "<Number of Recommendations>",
-  "Security Monitoring": "<Number of Recommendations>"
-}
+        {
+        "Governance": "<Number of Recommendations>",
+        "Asset Recommendations": "<Number of Recommendations>",
+        "Risk Management Recommendations": "<Number of Recommendations>",
+        "Training and Awareness Recommendations": "<Number of Recommendations>",
+        "Policies and Procedure Recommendations": "<Number of Recommendations>",
+        "Physical Security Recommendations": "<Number of Recommendations>",
+        "Incident Response Management Recommendations": "<Number of Recommendations>",
+        "Business Continuity Management Recommendations": "<Number of Recommendations>",
+        "Third Party Recommendations": "<Number of Recommendations>",
+        "Legal, Regulatory and Contractual Recommendations": "<Number of Recommendations>",
+        "Secure Configuration": "<Number of Recommendations>",
+        "Network Security": "<Number of Recommendations>",
+        "Anti-Malware": "<Number of Recommendations>",
+        "User Access and User Privileges": "<Number of Recommendations>",
+        "Mobile Devices, Mobile Working and Removable Media": "<Number of Recommendations>",
+        "Data Storage": "<Number of Recommendations>",
+        "Development": "<Number of Recommendations>",
+        "Security Monitoring": "<Number of Recommendations>"
+        }
 
-Ensure the counts for each recommendation category are accurate and mapped correctly.
-output should be strickly in json formate, no other information should be given.
-"""
+        Ensure the counts for each recommendation category are accurate and mapped correctly.
+        output should be strickly in json formate, no other information should be given.
+    """
     prompt_security = """
-    provide the following types of security alerts:
-    1. All frequent security alert types
-    2. All severe security alert types (based on impact and likelihood)
-    3. All security alert types by system type (e.g., server, workstation, network device)
- 
-Extract the following details from the pdf and return them in JSON format:
+        provide the following types of security alerts:
+        1. All frequent security alert types
+        2. All severe security alert types (based on impact and likelihood)
+        3. All security alert types by system type (e.g., server, workstation, network device)
+    
+        Extract the following details from the pdf and return them in JSON format:
 
-{
-  "Recent Security Alerts": [
-    {
-      "Type": "<Type of alert>",
-      "Description": "<Description of alert>",
-      "Severity": "<Severity level>",
-      "Time": "<Time since detected>",
-      "Status": "<Current status>"
-    },
-  ]
-}
+        {
+        "Recent Security Alerts": [
+            {
+            "Type": "<Type of alert>",
+            "Description": "<Description of alert>",
+            "Severity": "<Severity level>",
+            "Time": "<Time since detected>",
+            "Status": "<Current status>"
+            },
+        ]
+        }
 
-Ensure all alerts are captured with their respective details accurately. don't provide any thoughts just json
-"""
+        Ensure all alerts are captured with their respective details accurately. don't provide any thoughts just json
+    """
 
     # prompt_insight = """
     # provide actionable insights to streamline the decision-making process for security incident response, including:
@@ -142,7 +178,7 @@ Ensure all alerts are captured with their respective details accurately. don't p
     return jsonify({"summary123": response123,"response_area":response_area,"response_security": response_security})
 
 @app.route("/summarize-issues")
-def index():
+def summarizeIssues():
     """
     Renders the main page.
 
@@ -151,27 +187,28 @@ def index():
     """
     return render_template("qanoun.html")
 
-@app.route('/summarize-issues', methods=['POST'])
+@app.route('/answer', methods=['POST'])
 def summarize_issues():
-    print("IN")
+    file_path = request.form.get("file")
+    prompt = request.form.get("prompt")
 
-    # data = request.json
-    # file_path = data.get('file_path')
-    # prompt = data.get('prompt')
-
-    file_path = "D:/007/invarido/AI/reports/report.pdf"
-    prompt = "Provide insigts of audit report"
-
-    # prompt = request.form.get('prompt')
+    print("*"*30)
+    print("path:",file_path,"prompt",prompt)
     file = gemini_processor_.upload_file(file_path, mime_type="application/pdf")
     gemini_processor_.wait_for_files_to_be_ready()
-    # chat_session = gemini_processor.start_chat_session(prompt)
     chat_session = gemini_processor_.start_chat_session("local")
-    # response = gemini_processor_.send_message(file, chat_session, prompt)
-    # print(gemini_processor_.send_message(file, chat_session, prompt))
-    # return Response(response.text, mimetype="text/event-stream")
     return Response(gemini_processor_.send_message(file, chat_session, prompt), mimetype="text/event-stream")
-    # return jsonify({"summary": response})
+
+@app.route('/reportAnalysis',methods=['POST'])
+def reportAnalysis():
+    print("function is called")
+    path = request.form.get("path")
+    prompt = "Analyse given report and provide the solution of this report"
+
+    response = genimiGenerator(path,prompt)
+    print(response)
+    return jsonify({"data": response})
 
 if __name__ == '__main__':
+    print("Server Running on: "+str(CONF.PRODUCTION_APP_HOST)+":8000 or localhost:8000")
     app.run(port="8000", host=CONF.PRODUCTION_APP_HOST, debug=CONF.PRODUCTION_APP_DEBUG, threaded=CONF.PRODUCTION_APP_THREADED)
