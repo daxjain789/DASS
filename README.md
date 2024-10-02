@@ -46,7 +46,7 @@ python app.py
 
 
 - [Dax Jain](https://github.com/daxjain789)
-- [Aliraza Panjwani](hhttps://github.com/aliraza-panjwani)
+- [Aliraza Panjwani](https://github.com/aliraza-panjwani)
 - [Sushil SUthar](https://github.com/Sushilkumar-suthar)
 - [Shreya Tiwari](https://github.com/Shreya61)
 
