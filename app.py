@@ -12,7 +12,7 @@ from werkzeug.utils import secure_filename
 # load_dotenv()
 
 UPLOAD_FOLDER = "D:/Other/Invarido/GITHUB/DASS/uploadFile"
-UPLOAD_FOLDER = "A:/Projects/invarido/DASS/uploadFile"
+# UPLOAD_FOLDER = "A:/Projects/invarido/DASS/uploadFile"
 ALLOWED_EXTENSIONS = {'txt', 'pdf'}
 
 CONF = Config()

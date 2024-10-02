@@ -1,4 +1,5 @@
-let chatHistory = []
+let chatHistory = [];
+let chatHistoryStr = '[';
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -26,7 +27,7 @@ function addHistory(role,message){
         "role": role,
         "parts": [message]
     })
-
+    chatHistoryStr+=`{"role": ${role},"parts": [${message}]}`
     console.log("history",chatHistory)
 }
 
@@ -34,13 +35,13 @@ function sendMessage(message) {
     const chatBody = document.querySelector('.chat-body');
     const messageElement = document.createElement('div');
 
-    addHistory('user',message)
+    
 
     var formData = new FormData();
     formData.append("file_path", getCookie('path'));
     formData.append("prompt", message);
-    formData.append("history", JSON.stringify(history));
-    
+    formData.append("history", JSON.stringify(chatHistory));
+    addHistory('user',message)
     var object = {};
     formData.forEach((value, key) => object[key] = value);
     console.log("formData", JSON.stringify(object))
@@ -57,7 +58,7 @@ function sendMessage(message) {
         },
         timeout: 90000,
         success: function (response) {
-            aiMessage = marked.parse(response['summary'])
+            aiMessage = response['summary'].replace(/\*\*(\d+)\.\*\*/g, '<strong>$1.</strong>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>')
             addHistory('model',response['summary'])
             messageElement.classList.add('message', 'ai-message');
             messageElement.innerHTML = `<strong>AI:</strong> ${aiMessage}`;
@@ -79,6 +80,7 @@ document.querySelector('#sendButton').addEventListener('click', async (event)=> 
     aiMessage = ""
     if (message) {
         // sendMessage(message)
+        addHistory('user',message)
         const chatBody = document.querySelector('.chat-body');
         const messageElementUser = document.createElement('div');
         const messageElement = document.createElement('div');
@@ -94,43 +96,54 @@ document.querySelector('#sendButton').addEventListener('click', async (event)=> 
         var formData = new FormData();
         formData.append("file", getCookie('path'));
         formData.append("prompt", message);
-        formData.append("history", JSON.stringify(history));
-        addHistory('user',message)
+        formData.append("history", JSON.stringify(chatHistory))
+        
 
+        var object = {};
+        formData.forEach((value, key) => {
+            console.log(key,value)
+        });
         event.preventDefault();
 
-        const response = await fetch("/answer", {
-            method: "POST",
-            headers: {
-                'Accept': 'text/event-stream'
-            },
-            body:formData
-        });
-        
+        setTimeout(async ()=>{
+            formData.forEach((value, key) => {
+                console.log("inner",key,value)
+            });
+            const response = await fetch("/answer", {
+                method: "POST",
+                headers: {
+                    'Accept': 'text/event-stream'
+                },
+                body:formData
+            });
+            
 
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder();
-        messageElement.classList.add('message', 'ai-message');
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            messageElement.classList.add('message', 'ai-message');
 
-        chatBody.appendChild(messageElement);
-        chatBody.scrollTop = chatBody.scrollHeight;
-        input.value = '';
-        messageElement.innerHTML = `<strong>AI:</strong> `
-        console.log("Stream Start")
-        
-        function readStream(){
-            reader.read().then(({done,value})=>{
-                if(done){
-                    addHistory('model',aiMessage)
-                    return "Done"
-                }
-                let stream_return = decoder.decode(value,{stream:true})
-                aiMessage+=stream_return
-                messageElement.innerHTML += marked.parse(stream_return);
-                readStream()
-            })
-        }
-        readStream();
+            chatBody.appendChild(messageElement);
+            chatBody.scrollTop = chatBody.scrollHeight;
+            input.value = '';
+            // messageElement.innerHTML = `<strong>AI:</strong> `
+            console.log("Stream Start")
+            
+            function readStream(){
+                reader.read().then(({done,value})=>{
+                    if(done){
+                        addHistory('model',aiMessage)
+                        return "Done"
+                    }
+                    let stream_return = decoder.decode(value,{stream:true})
+                    aiMessage+=stream_return
+                    console.log("ai message",aiMessage)
+                    messageElement.innerHTML = `<strong>AI:</strong> `;
+                    messageElement.innerHTML += aiMessage.replace(/\*\*(\d+)\.\*\*/g, '<strong>$1.</strong>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+                    readStream()
+                })
+            }
+            readStream();
+        },3000);
         
     }
     
@@ -197,6 +210,7 @@ document.querySelector('#reportFile').addEventListener('change',(event) => {
     document.querySelector('.file-upload').style.borderColor = '#42e776'
     
     let path = uploadFile()
+    aiMessage = ""
     setTimeout(console.log("1"),1000)
     setTimeout(async ()=>{
         console.log("1Sec",path)
@@ -233,7 +247,9 @@ document.querySelector('#reportFile').addEventListener('change',(event) => {
                     return "Done"
                 }
                 let stream_return = decoder.decode(value,{stream:true})
-                messageElement.innerHTML += marked.parse(stream_return);
+                aiMessage+=stream_return
+                console.log(aiMessage)
+                messageElement.innerHTML = `<strong>AI:</strong> `+aiMessage.replace(/\*\*(\d+)\.\*\*/g, '<strong>$1.</strong>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
                 readStream()
             })
         }
