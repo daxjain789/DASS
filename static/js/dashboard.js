@@ -29,7 +29,13 @@ const data = {
     'barData': [],
     'pieLabels': ['Malware', 'Phishing', 'DDoS', 'Insider Threats'],
     'pieData': [],
-
+    'securityAlerts':{
+        'type':[],
+        'description':[],
+        'severity':[],
+        'time':[],
+        'status':[]
+    }
 }
 
 function addCharts() {
@@ -79,6 +85,17 @@ function addCharts() {
 function updateData() {
     document.querySelector("#totalIncident").innerHTML = data['insides']
     document.querySelector("#systemMonitored").innerHTML = data['systemsMonitored']
+
+    for(let i=0;i<data['securityAlerts']['type'].length;i++){
+        document.querySelector('.addAlerts').innerHTML+=`<tr>
+                                    <td>${data['securityAlerts']['type'][i]}</td>
+                                    <td>${data['securityAlerts']['description'][i]}</td>
+                                    <td class="severity-${data['securityAlerts']['severity'][i].lower()}">${data['securityAlerts']['severity'][i]}</td>
+                                    <td>${data['securityAlerts']['time'][i]}</td>
+                                    <td class="status-in-progress">${data['securityAlerts']['status'][i]}</td>
+                                </tr>`
+    }
+    
 }
 
 function convertToPer(arr) {
@@ -95,7 +112,7 @@ function convertToPer(arr) {
 function getData() {
     var formData = new FormData();
 
-    formData.append("file_path", getCookie(""));
+    formData.append("file_path", getCookie("path"));
     formData.append("prompt", "");
 
     $.ajax({
@@ -111,6 +128,8 @@ function getData() {
         success: function (response) {
             console.log(response)
             data['insides'] = response['summary123']['incidents']
+            data['systemsMonitored'] = response['summary123']['monitired']
+
             data['barLabels'] = Object.keys(response['response_area'])
             for (var key in response['response_area']) {
                 data['barData'].push(response['response_area'][key])
@@ -122,6 +141,14 @@ function getData() {
             }
 
             data['pieData'] = convertToPer(data['pieData'])
+
+            for(d of response['response_security']['Recent Security Alerts']){
+                data['securityAlerts']['type'].push(d['type'])
+                data['securityAlerts']['description'].push(d['description'])
+                data['securityAlerts']['severity'].push(d['severity'])
+                data['securityAlerts']['time'].push(d['time'])
+                data['securityAlerts']['status'].push(d['status'])
+            }
             addCharts()
             updateData()
         },
