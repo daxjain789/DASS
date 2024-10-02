@@ -1,3 +1,4 @@
+let chatHistory = []
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -20,13 +21,26 @@ for(let i = 0; i < ca.length; i++) {
 return "";
 }
 
+function addHistory(role,message){
+    chatHistory.push({
+        "role": role,
+        "parts": [message]
+    })
+
+    console.log("history",chatHistory)
+}
+
 function sendMessage(message) {
     const chatBody = document.querySelector('.chat-body');
     const messageElement = document.createElement('div');
+
+    addHistory('user',message)
+
     var formData = new FormData();
     formData.append("file_path", getCookie('path'));
     formData.append("prompt", message);
-
+    formData.append("history", JSON.stringify(history));
+    
     var object = {};
     formData.forEach((value, key) => object[key] = value);
     console.log("formData", JSON.stringify(object))
@@ -34,7 +48,7 @@ function sendMessage(message) {
     $.ajax({
         data: formData,
         type: "POST",
-        url: "/summarize-issues",
+        url: "/answer",
         // enctype: 'multipart/form-data',
         contentType: false,
         processData: false,
@@ -44,6 +58,7 @@ function sendMessage(message) {
         timeout: 90000,
         success: function (response) {
             aiMessage = marked.parse(response['summary'])
+            addHistory('model',response['summary'])
             messageElement.classList.add('message', 'ai-message');
             messageElement.innerHTML = `<strong>AI:</strong> ${aiMessage}`;
             chatBody.appendChild(messageElement);
@@ -61,6 +76,7 @@ function sendMessage(message) {
 document.querySelector('#sendButton').addEventListener('click', async (event)=> {
     const input = document.querySelector('.chat-input input');
     const message = input.value.trim();
+    aiMessage = ""
     if (message) {
         // sendMessage(message)
         const chatBody = document.querySelector('.chat-body');
@@ -78,6 +94,8 @@ document.querySelector('#sendButton').addEventListener('click', async (event)=> 
         var formData = new FormData();
         formData.append("file", getCookie('path'));
         formData.append("prompt", message);
+        formData.append("history", JSON.stringify(history));
+        addHistory('user',message)
 
         event.preventDefault();
 
@@ -99,19 +117,23 @@ document.querySelector('#sendButton').addEventListener('click', async (event)=> 
         input.value = '';
         messageElement.innerHTML = `<strong>AI:</strong> `
         console.log("Stream Start")
-
+        
         function readStream(){
             reader.read().then(({done,value})=>{
                 if(done){
+                    addHistory('model',aiMessage)
                     return "Done"
                 }
                 let stream_return = decoder.decode(value,{stream:true})
+                aiMessage+=stream_return
                 messageElement.innerHTML += marked.parse(stream_return);
                 readStream()
             })
         }
         readStream();
+        
     }
+    
 });
 
 function uploadFile() {

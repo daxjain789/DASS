@@ -79,7 +79,8 @@ class GeminiFileProcessor:
 
         if not self.files:
             raise Exception("No files uploaded. Upload a file first.")
-
+        if chat_history == None:
+            chat_history = []
         if prompt == "local":
             print("local")
             chat_session = self.model.start_chat()
@@ -88,13 +89,14 @@ class GeminiFileProcessor:
         file_hist = [
                 {
                     "role": "user",
-                    "parts": [self.files[0], prompt]
+                    "parts": [self.files[0],'analyse this file']
                 },
                 {
                     "role": "model",
                     "parts": ["Analyzing and generating a summary from the uploaded file..."]
                 },
             ]
+        
         history = file_hist + chat_history
 
         chat_session = self.model.start_chat(history=history)

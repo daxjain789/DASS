@@ -197,11 +197,12 @@ def summarize_issues():
 
     print("*"*30)
     print("path:",file_path,"prompt",prompt,"\n\nhistory:",history)
+
     file = gemini_processor_.upload_file(file_path, mime_type="application/pdf")
     gemini_processor_.wait_for_files_to_be_ready()
     chat_session = gemini_processor_.start_chat_session(history)
     # chat_session = gemini_processor_.start_chat_session("local")
-    return Response(gemini_processor_.send_message(chat_session, prompt), mimetype="text/event-stream")
+    return Response(gemini_processor_.send_message(chat_session, prompt,), mimetype="text/event-stream")
     # return Response(gemini_processor_.send_message(file, chat_session, prompt), mimetype="text/event-stream")
 
 @app.route('/reportAnalysis',methods=['POST'])
@@ -216,7 +217,6 @@ def reportAnalysis():
     gemini_processor.wait_for_files_to_be_ready()
     response = gemini_processor.send_message(file, prompt)
 
-    # response = genimiGenerator(path,prompt)
     print(response)
     return jsonify({"data": response})
 
